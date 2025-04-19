@@ -1,0 +1,253 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero .hero-content {
+    width: 50%;
+}
+
+#hero .hero-image {
+    width: 40%;
+}
+
+#hero .hero-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#services .service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#services .service-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Prices Section */
+#prices {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+#prices table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#prices th, #prices td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#prices th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#projects .project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contacts Section */
+#contacts {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+#contacts .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contacts .contact-details {
+    width: 40%;
+}
+
+#contacts .contact-form {
+    width: 50%;
+}
+
+#contacts .contact-form input,
+#contacts .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero .container {
+        flex-direction: column;
+    }
+
+    #hero .hero-content,
+    #hero .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero .hero-image {
+        margin-top: 20px;
+    }
+
+    #contacts .contact-info {
+        flex-direction: column;
+    }
+
+    #contacts .contact-details,
+    #contacts .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
